@@ -171,7 +171,32 @@ class taskController1 extends Controller
 
         auth()->logout();
 
-        return redirect(url('/login'));
-
+        return redirect(url('/login'));}
     }
-}
+
+//     public function studentView(){
+//         return view('activateSystem');
+//     }
+
+//     public function systemL()
+//     {
+//         //
+//         return view('systemLogin');
+//     }
+//     public function systemLog(Request $request)
+//     {
+//         //
+//         //dd($request);
+//         $data =  $this->validate($request,
+//         [
+//             "email" => "required|email|",
+//             "password" => "required|min:5",
+//         ]);
+//         //dd($data);
+//         $op = users::where('email',$data['email'])->get('role');
+//         //dd($op);
+//         $data2 = json_decode($op,true);
+//         //dd($data2[0]['role']);
+//         return view('activateSystem');
+//     }
+// }

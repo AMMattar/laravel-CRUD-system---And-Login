@@ -37,7 +37,7 @@
         <div class="page-header">
             <h1>Users </h1> <br>
 
-            <?php echo auth()->user()->name.'|||'.auth()->user()->id  ?>
+            <?php //echo auth()->user()->name.'|||'.auth()->user()->id  ?>
 
             {{ session()->get('Message') }}
 
